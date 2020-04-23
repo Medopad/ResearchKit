@@ -64,9 +64,6 @@
         if ( investigatorLongDescription.length == 0 ) {
             @throw [NSException exceptionWithName:NSInvalidArgumentException reason:@"investigatorLongDescription should not be empty." userInfo:nil];
         }
-        if ( localizedLearnMoreHTMLContent.length == 0 ) {
-            @throw [NSException exceptionWithName:NSInvalidArgumentException reason:@"localizedLearnMoreHTMLContent should not be empty." userInfo:nil];
-        }
         
         if (isForCOVID) {
             self.answerFormat = [ORKAnswerFormat choiceAnswerFormatWithStyle:ORKChoiceAnswerStyleSingleChoice textChoices:
@@ -87,10 +84,10 @@
             @[[ORKTextChoice choiceWithText:choice1Text value:@(YES)],
               [ORKTextChoice choiceWithText:choice2Text value:@(NO)],
               ]];
-        }
-        
-        if (summary.length > 0) {
-            self.text = summary;
+            
+            if (summary.length > 0) {
+                self.text = summary;
+            }
         }
         
         self.optional = NO;
@@ -98,7 +95,10 @@
         self.title = ORKLocalizedString(@"CONSENT_SHARING_TITLE", nil);
         
         self.showsProgress = NO;
-        self.localizedLearnMoreHTMLContent = localizedLearnMoreHTMLContent;
+        
+        if (localizedLearnMoreHTMLContent.length > 0) {
+            self.localizedLearnMoreHTMLContent = localizedLearnMoreHTMLContent;
+        }
     }
     return self;
 }
