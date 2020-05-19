@@ -34,7 +34,7 @@
 "CONSENT_NAME_FAMILY" = "Nachname";
 "CONSENT_NAME_PLACEHOLDER" = "Erforderlich";
 "CONSENT_REVIEW_TITLE" = "Überprüfen";
-"CONSENT_REVIEW_INSTRUCTION" = "Lesen Sie das Formular unten nochmals durch und tippen Sie auf \"Akzeptieren\", wenn Sie bereit zum Fortfahren sind.";
+"CONSENT_REVIEW_INSTRUCTION" = "Lesen Sie das Formular unten nochmals durch und tippen Sie auf \"Ich willige ein\", wenn Sie bereit zum Fortfahren sind.";
 "CONSENT_REVIEW_ALERT_TITLE" = "Überprüfen";
 "CONSENT_SIGNATURE_TITLE" = "Unterschrift";
 "CONSENT_SIGNATURE_INSTRUCTION" = "Unterzeichne mit deinem Finger in dem Feld unten.";
@@ -207,13 +207,13 @@
 "PLACEHOLDER_LONG_TEXT" = "Zum Schreiben tippen";
 
 /* Button titles */
-"BUTTON_AGREE" = "Akzeptieren";
-"BUTTON_CANCEL" = "Abbrechen";
+"BUTTON_AGREE" = "Ich willige ein";
+"BUTTON_CANCEL" = "Nicht einwilligen";
 "BUTTON_OK" = "OK";
 "BUTTON_CLEAR" = "Löschen";
 "BUTTON_CLEAR_SIGNATURE" = "Unterschrift löschen";
 "BUTTON_APPLY" = "Anwenden";
-"BUTTON_DISAGREE" = "Ablehnen";
+"BUTTON_DISAGREE" = "Nicht einwilligen";
 "BUTTON_DONE" = "Fertig";
 "BUTTON_GET_STARTED" = "Los geht’s";
 "BUTTON_LEARN_MORE" = "Weitere Infos";
